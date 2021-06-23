@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.3s linear;
   }
 }
 
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  all: unset;
+  margin: 4px;
+  background-color: #61dafb;
+  padding: 10px;
+  border-radius: 20px;
+  color: #282c34;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
 }
