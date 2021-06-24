@@ -1,9 +1,17 @@
+import firebase from "firebase/app";
+import "firebase/auth";
+import provider from '../modules/FirebaseAuth';
+
 function Login(): JSX.Element {
   return (
     <div className="Login">
-      <button>Login with Google</button>
-      <button>Login with Twitter</button>
-      <button>Login with GitHub</button>
+      <button
+        onClick={() => {
+          firebase.auth().signInWithRedirect(provider);
+        }}
+      >
+        Login with Google
+      </button>
     </div>
   );  
 }

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Login from './components/Login';
-import Logout from './components/Logout';
+//import Logout from './components/Logout';
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>React + TypeScript: Login Practice</h1>
         <Login />
-        <Logout />
       </header>
     </div>
   );
